@@ -5,20 +5,27 @@
 #include <Arduino.h>
 // #define ATOMIC_FS_UPDATE
 
-#define LED_BOARD 2
-#define MOT1_PIN 27
-#define MOT2_PIN 26
+//// ESP32 dev board config 
+// #define BUT 0
+// #define LED_BOARD 2
+// #define MOT1_PIN 27
+// #define MOT2_PIN 26
+///
+///   OR 
+//// ESP32 cam board config
+#define BUT 12
+#define LED_BOARD 4
+#define MOT1_PIN 13
+#define MOT2_PIN 15
+
+
 #define PWMCHAN1 0
 #define PWMCHAN2 1
 #define LEDPWM 3
-#define BUT 0
 #define STARTSPEED 55
 #define STARTTIME 500 // сколько милисекунд происходит страгивание
 #define MINSPEED 35
 #define ACCELERATION 12 // ускорение: 1...50;
-#define RELE1 2
-#define ON 1
-#define OFF 0
 
 #define CHECKMOTOR // в начале программы крутанет колесами туда сюда
 // #define MOTORDEBUG // отладка движения мотора
